@@ -1,8 +1,25 @@
 aid: demander-justice
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/demander-justice.png
 name: Demander Justice
-description: 'Demander Justice is a company surfaced as a portfolio company of partech and added to the
-  API Evangelist network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Demander Justice (demanderjustice.com) is a French legal-technology company that lets
+  everyday people (justiciables) resolve disputes and take a matter to court without hiring a lawyer.
+  Through simplified, guided online procedures it helps users send formal notices (mise en demeure),
+  file injonctions de payer, and bring cases before the relevant French courts across consumer, housing,
+  telecom, travel, banking, neighbor, and small-claims disputes. The service combines legal information
+  fiches with a step-by-step document-generation and court-filing workflow. Backed by Partech; profiled
+  in the API Evangelist network under the Consumer sector. No public developer/API surface was found
+  at enrichment time.'
 url: https://raw.githubusercontent.com/api-evangelist/demander-justice/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Legal
+- LegalTech
+- Justice
+- Dispute Resolution
+- France
+- Access to Justice
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/demander-justice-domain-security.yml
 - type: Website
-  url: http://demanderjustice.com/
+  url: https://www.demanderjustice.com/
+- type: PrivacyPolicy
+  url: https://www.demanderjustice.com/politique-de-confidentialite
+- type: TermsOfService
+  url: https://www.demanderjustice.com/mentions-legales
+- type: Support
+  url: https://www.demanderjustice.com/contacts/new
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
